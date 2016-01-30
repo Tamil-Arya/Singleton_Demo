@@ -12,16 +12,14 @@
 @interface HTTPServerClass : NSObject<NSURLSessionDataDelegate,NSURLSessionDelegate>
 {
     NSString *someProperty;
-    NSArray *ServerDataArray;
-    NSArray *PaidUserServerDataArray;
+    NSMutableArray *ServerDataArray;
 }
 
 @property (nonatomic, retain) NSString *someProperty;
-@property (nonatomic, retain) NSArray *ServerDataArray;
-@property (nonatomic, retain) NSArray *PaidUserServerDataArray;
+@property (nonatomic, retain) NSMutableArray *ServerDataArray;
+
 
 + (id)sharedManager;
--(void)HTTPServerCall:(NSString *)urlstring ServerCallsequenceNumber:(NSInteger)sequenceNumber;
--(NSArray *)Getserverdata:(NSInteger)sequenceNumber;
-
+-(void)HTTPServerCall:(NSString *)urlstring;
+-(NSMutableArray *)Getserverdata;
 @end

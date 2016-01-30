@@ -6,9 +6,9 @@
 //  Copyright © 2016 Dvois. All rights reserved.
 //
 
-#import "ViewController.h"
+
 #import "HTTPServerClass.h"
-@interface NSURLSessionVc : ViewController
+@interface NSURLSessionVc :UIViewController
 {
     NSArray *serverdatas;
     HTTPServerClass *singletonobj;

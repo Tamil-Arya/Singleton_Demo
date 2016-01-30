@@ -10,71 +10,49 @@
 
 @implementation HTTPServerClass
 
-@synthesize someProperty,PaidUserServerDataArray,ServerDataArray;
+@synthesize someProperty,ServerDataArray;
 
 #pragma mark Singleton Methods
 
+//allocate memory
 + (id)sharedManager {
     static HTTPServerClass *sharedMyManager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedMyManager = [[self alloc] init];
+    
     });
     return sharedMyManager;
 }
-
+//init
 - (id)init {
     if (self = [super init]) {
+        //We can hard the string 
         someProperty = @"Default Property Value";
-        PaidUserServerDataArray=nil;
-        ServerDataArray=nil;
-        
         
     }
     return self;
 }
 
--(void)HTTPServerCall:(NSString *)urlstring ServerCallsequenceNumber:(NSInteger)sequenceNumbe
-{
+//server call methods
+-(void)HTTPServerCall:(NSString *)urlstring{
     
     NSURLSessionConfiguration *defaultObj=[NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *defaulturlobj=[NSURLSession sessionWithConfiguration:defaultObj delegate:self delegateQueue:[NSOperationQueue mainQueue]];
     NSURL *url=[NSURL URLWithString:urlstring];
     NSURLSessionDataTask *dataTask=[defaulturlobj dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-       
-      
         if (error == nil && data.length>0) {
-            
-            if (sequenceNumbe ==1)
-            {
-                  NSLog(@"Firstb :%ld",(long)sequenceNumbe);
-                 PaidUserServerDataArray=[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-            }
-            else if(sequenceNumbe ==2)
-            {
-                  NSLog(@"Second :%ld",(long)sequenceNumbe);
-                 ServerDataArray=[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-            }
-           
-            // NSLog(@"%@",ServerDataArray);
+            ServerDataArray=[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
         }
     }];
     [dataTask resume];
     
 }
--(NSArray *)Getserverdata:(NSInteger)sequenceNumber
-{
-    if (sequenceNumber==1) {
-        return  PaidUserServerDataArray;;
-    }
-    else
-    {
+
+//Return the data
+-(NSMutableArray *)Getserverdata{
         return ServerDataArray;
-    }
     
 }
 
-- (void)dealloc {
-    // Should never be called, but just here for clarity really.
-}
 @end

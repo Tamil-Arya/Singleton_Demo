@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "HTTPServerClass.h"
-#import "HUD.h"
+
 @interface ViewController ()<UIAlertViewDelegate,UIActionSheetDelegate>
 
 @end
@@ -18,11 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    [HUD showUIBlockingIndicatorWithText:@"Please wait,..."];
-    
    singletonobjs=[HTTPServerClass sharedManager];
-    [singletonobjs HTTPServerCall:@"http://adserver.i-on.in:8080/GetStates" ServerCallsequenceNumber:1];
+    [singletonobjs HTTPServerCall:@"Request url" ServerCallsequenceNumber:1];
     [self performSelector:@selector(getServerdata) withObject:nil afterDelay:3.0];
     
     

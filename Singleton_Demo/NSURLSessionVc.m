@@ -8,7 +8,7 @@
 
 #import "NSURLSessionVc.h"
 #import "HTTPServerClass.h"
-#import "HUD.h"
+
 @interface NSURLSessionVc ()
 
 @end
@@ -18,11 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
  
-    [HUD showAlertWithTitle:@"ION WiFi" text:@"Please wait,.."];
-    
+
     singletonobj=[HTTPServerClass sharedManager];
    
-    [singletonobj HTTPServerCall:@"http://adserver.i-on.in:8080/GetCustomerwithMob?id=8880724780" ServerCallsequenceNumber:2];
+    [singletonobj HTTPServerCall:@"Request url" ServerCallsequenceNumber:2];
   
     
    [self performSelector:@selector(serverCallMethod) withObject:nil afterDelay:3.0];
@@ -34,7 +33,7 @@
    serverdatas=[singletonobj Getserverdata:2];
     
     NSLog(@"Return server data : %@",serverdatas);
-    [HUD hideUIBlockingIndicator];
+  
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

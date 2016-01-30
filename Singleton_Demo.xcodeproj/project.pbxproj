@@ -8,18 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		98CB358A1C5CA915002DCEEB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 98CB35891C5CA915002DCEEB /* README.md */; };
+		98CB358D1C5CB771002DCEEB /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CB358C1C5CB771002DCEEB /* SecondViewController.m */; };
 		98E6F5701C5CA5F600E1DD7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E6F56F1C5CA5F600E1DD7A /* main.m */; };
 		98E6F5731C5CA5F600E1DD7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E6F5721C5CA5F600E1DD7A /* AppDelegate.m */; };
 		98E6F57B1C5CA5F600E1DD7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98E6F57A1C5CA5F600E1DD7A /* Assets.xcassets */; };
 		98E6F57E1C5CA5F600E1DD7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98E6F57C1C5CA5F600E1DD7A /* LaunchScreen.storyboard */; };
 		98E6F5891C5CA5F600E1DD7A /* Singleton_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E6F5881C5CA5F600E1DD7A /* Singleton_DemoTests.m */; };
 		98E6F5941C5CA5F600E1DD7A /* Singleton_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E6F5931C5CA5F600E1DD7A /* Singleton_DemoUITests.m */; };
-		98E6F5A81C5CA60F00E1DD7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E6F5A21C5CA60F00E1DD7A /* ViewController.m */; };
 		98E6F5A91C5CA60F00E1DD7A /* NSURLSessionVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E6F5A41C5CA60F00E1DD7A /* NSURLSessionVc.m */; };
 		98E6F5AA1C5CA60F00E1DD7A /* HTTPServerClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E6F5A61C5CA60F00E1DD7A /* HTTPServerClass.m */; };
 		98E6F5AB1C5CA60F00E1DD7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98E6F5A71C5CA60F00E1DD7A /* Main.storyboard */; };
-		98E6F5B11C5CA61E00E1DD7A /* HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E6F5AD1C5CA61E00E1DD7A /* HUD.m */; };
-		98E6F5B21C5CA61E00E1DD7A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E6F5AF1C5CA61E00E1DD7A /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		98CB35891C5CA915002DCEEB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		98CB358B1C5CB771002DCEEB /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		98CB358C1C5CB771002DCEEB /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		98E6F56B1C5CA5F600E1DD7A /* Singleton_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Singleton_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E6F56F1C5CA5F600E1DD7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98E6F5711C5CA5F600E1DD7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,17 +54,11 @@
 		98E6F58F1C5CA5F600E1DD7A /* Singleton_DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Singleton_DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E6F5931C5CA5F600E1DD7A /* Singleton_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Singleton_DemoUITests.m; sourceTree = "<group>"; };
 		98E6F5951C5CA5F600E1DD7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98E6F5A11C5CA60F00E1DD7A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		98E6F5A21C5CA60F00E1DD7A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		98E6F5A31C5CA60F00E1DD7A /* NSURLSessionVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSessionVc.h; sourceTree = "<group>"; };
 		98E6F5A41C5CA60F00E1DD7A /* NSURLSessionVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionVc.m; sourceTree = "<group>"; };
 		98E6F5A51C5CA60F00E1DD7A /* HTTPServerClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPServerClass.h; sourceTree = "<group>"; };
 		98E6F5A61C5CA60F00E1DD7A /* HTTPServerClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPServerClass.m; sourceTree = "<group>"; };
 		98E6F5A71C5CA60F00E1DD7A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		98E6F5AC1C5CA61E00E1DD7A /* HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUD.h; sourceTree = "<group>"; };
-		98E6F5AD1C5CA61E00E1DD7A /* HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUD.m; sourceTree = "<group>"; };
-		98E6F5AE1C5CA61E00E1DD7A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		98E6F5AF1C5CA61E00E1DD7A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,20 +109,19 @@
 		98E6F56D1C5CA5F600E1DD7A /* Singleton_Demo */ = {
 			isa = PBXGroup;
 			children = (
-				98CB35891C5CA915002DCEEB /* README.md */,
 				98E6F5711C5CA5F600E1DD7A /* AppDelegate.h */,
 				98E6F5721C5CA5F600E1DD7A /* AppDelegate.m */,
-				98E6F5A11C5CA60F00E1DD7A /* ViewController.h */,
-				98E6F5A21C5CA60F00E1DD7A /* ViewController.m */,
 				98E6F5A31C5CA60F00E1DD7A /* NSURLSessionVc.h */,
 				98E6F5A41C5CA60F00E1DD7A /* NSURLSessionVc.m */,
+				98CB358B1C5CB771002DCEEB /* SecondViewController.h */,
+				98CB358C1C5CB771002DCEEB /* SecondViewController.m */,
 				98E6F5A51C5CA60F00E1DD7A /* HTTPServerClass.h */,
 				98E6F5A61C5CA60F00E1DD7A /* HTTPServerClass.m */,
-				98E6F5B01C5CA61E00E1DD7A /* Loader */,
 				98E6F5A71C5CA60F00E1DD7A /* Main.storyboard */,
 				98E6F57A1C5CA5F600E1DD7A /* Assets.xcassets */,
 				98E6F57C1C5CA5F600E1DD7A /* LaunchScreen.storyboard */,
 				98E6F57F1C5CA5F600E1DD7A /* Info.plist */,
+				98CB35891C5CA915002DCEEB /* README.md */,
 				98E6F56E1C5CA5F600E1DD7A /* Supporting Files */,
 			);
 			path = Singleton_Demo;
@@ -159,18 +152,6 @@
 			);
 			path = Singleton_DemoUITests;
 			sourceTree = "<group>";
-		};
-		98E6F5B01C5CA61E00E1DD7A /* Loader */ = {
-			isa = PBXGroup;
-			children = (
-				98E6F5AC1C5CA61E00E1DD7A /* HUD.h */,
-				98E6F5AD1C5CA61E00E1DD7A /* HUD.m */,
-				98E6F5AE1C5CA61E00E1DD7A /* MBProgressHUD.h */,
-				98E6F5AF1C5CA61E00E1DD7A /* MBProgressHUD.m */,
-			);
-			name = Loader;
-			path = "/Users/dvios-mac/Desktop/DemoShare/DemoShare/../../../Documents/trunk/ION WiFi";
-			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
@@ -302,14 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98CB358D1C5CB771002DCEEB /* SecondViewController.m in Sources */,
 				98E6F5A91C5CA60F00E1DD7A /* NSURLSessionVc.m in Sources */,
 				98E6F5AA1C5CA60F00E1DD7A /* HTTPServerClass.m in Sources */,
-				98E6F5A81C5CA60F00E1DD7A /* ViewController.m in Sources */,
-				98E6F5B11C5CA61E00E1DD7A /* HUD.m in Sources */,
 				98E6F5731C5CA5F600E1DD7A /* AppDelegate.m in Sources */,
 				98E6F5701C5CA5F600E1DD7A /* main.m in Sources */,
 				98CB358A1C5CA915002DCEEB /* README.md in Sources */,
-				98E6F5B21C5CA61E00E1DD7A /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
